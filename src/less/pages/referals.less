@@ -1,0 +1,503 @@
+.referals {
+    &__desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 28px;
+
+        @media screen and (max-width: 936px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    .refer--buy-mobile {
+        display: none;
+        max-width: none;
+        margin-bottom: 60px;
+
+
+        @media screen and(max-width: 560px) {
+            display: flex;
+            
+        }
+    }
+
+    &__desc-content {
+        flex-shrink: 0;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 530px) {
+            flex-shrink: 1;
+
+        }
+
+        br {
+            @media screen and (max-width: 530px) {
+                display: none;    
+            }
+        }
+    }
+
+
+    .copy-line {
+        margin-left: 20px;
+
+        @media screen and (max-width: 936px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__torefs {
+        display: flex;
+        justify-content: flex-end;
+        display: none;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1081px) {
+            display: flex;
+        }
+
+        .refer {
+            font-size: 12px;
+            width: 160px;
+            height: 42px !important;
+            background: #4a770e;
+        }
+    }
+
+    &__desc-title {
+        font-size: 1.12rem;
+        color: @whiteColor;
+        font-weight: @fwL;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+
+    &__desc-paragraph {
+        font-size: 13px;
+        color: #838683;
+        line-height: 20px;
+    }
+
+    &__sub {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 1.62rem;
+        flex-wrap: wrap;
+        padding: 1.325rem 1.875rem;
+        border-radius: 4px;
+
+        .refer {
+            @media screen and (max-width: 1057px) {
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media screen and(max-width: 560px) {
+                display: none;   
+            }
+
+        }
+
+    }
+
+    &__subnum-container {
+        display: flex;
+
+        @media screen and (max-width: 1057px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__subnum-item {
+        display: flex;
+        align-items: center;
+        padding: 0 1.7rem;
+        height: 65px;
+        position: relative;
+
+        @media screen and (max-width: 866px) {
+            width: 100%;
+            padding: 0;
+            padding-right: 10px;
+        }
+
+        @media screen and (max-width: 466px) {
+            width: 90%;
+        }
+
+        &:after {
+            content: '';
+            width: 1px;
+            height: 114%;
+            background-color: #313735;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 56px;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &:after {
+                display: none;
+
+                @media screen and (max-width: 866px) {
+                    display: block;
+                }
+            }
+            
+        }
+
+        &--last {
+            &:before {
+                content: '';
+                position:  absolute;
+                width: 60px;
+                height: 60px;
+                background: url('../../img/movearrow.png') no-repeat center;
+                transform: rotate(90deg);
+                right: -60px;
+                display: none;
+
+                @media screen and (max-width: 375px) {
+                    right: -55px;
+                }
+
+                @media screen and (max-width: 446px) {
+                    display: block;
+                }
+            }
+        }
+
+
+
+    }
+
+    &__subnum-num {
+        font-size: 1.6rem;
+        color: @whiteColor;
+        font-weight: @fwB;
+
+        @media screen and (max-width: 866px) {
+            width: 120px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 380px) {
+            width: 100px;
+        }
+
+        &--green {
+            color: @activeColor;
+        }
+
+        &--green-shadow {
+            text-shadow: 0px 0px 25px #a3e004;
+        }
+
+        &--big {
+            font-size: 2.25rem;
+        }
+    }
+
+    &__subnum-value {
+        font-size: 13px;
+        color: #838683;
+        line-height: 20px;
+        margin-left: 20px;
+
+        &--white {
+            color: @whiteColor;
+        }
+    }
+
+    &__move-arrow {
+        width: 60px;
+        height: 60px;
+        background: url('../../img/movearrow.png') no-repeat center;
+
+        @media screen and (max-width: 1118px) {
+            display: none;
+        }
+    }
+
+    .refer {
+        height: 56px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        .refer {
+            max-width: 160px;
+            font-size: 12px;
+            padding: 1.12rem 1rem;
+            background: #4a770e;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                fill: @whiteColor;
+                width: 17px;
+                height: 17px;
+                margin-right: 10px;
+            }
+
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__refers-table {
+        margin-bottom: 28px;
+    }
+
+
+    &__withdrawal-table {
+
+        .info-table__col--date-change {
+            
+            @media screen and (max-width: 680px) {
+                display: none;
+            }
+        }
+
+        .info-table__col-status-content {
+            @media screen and (max-width: 680px) {
+                display: none;
+            }
+        }
+
+        .info-table__col--status {
+            @media screen and (max-width: 680px) {
+                flex-shrink: 2;
+                margin-right: 40px;
+            }
+        }
+    }
+
+    &__withdrawal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        flex-wrap: wrap;
+    }
+
+    &__withdrawal-content {
+        @media screen and (max-width: 1184px) {
+            margin-bottom: 54px;
+        }
+    }
+
+    &__withdrawal-title {
+        font-size: 18px;
+        font-weight: @fwL;
+        color: @whiteColor;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+
+    &__withdrawal-balance {
+        font-size: 14px;
+        font-weight: @fwL;
+        color: @whiteColor;
+
+        span {
+            color: @activeColor;
+        }
+    }
+
+
+    &__withdrawal-fields {
+        display: flex;
+        margin-left: 20px;
+
+        @media screen and (max-width: 1161px) {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-wrap: wrap;
+        }
+
+        & > * {
+            &:not(:first-child) {
+                margin-left: 16px;
+
+                @media screen and (max-width: 900px) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .refer {
+            height: 52px;
+        }
+    }
+
+    &__withdrawal-field {
+        width: 100%;
+        background-color: #1f2323;
+        font-size: 14px;
+        color: @whiteColor;
+        border: 1px solid #282c2c;
+        height: 52px;
+        min-width: 260px;
+        padding: 0 22px;
+        border-radius: 3px;
+
+        @media screen and (max-width: 1112px) {
+            min-width: 200px;
+        }
+
+        @media screen and (max-width: 900px) {
+            min-width: auto;
+            margin-bottom: 18px;
+        }
+
+    }
+
+    #datapicker {
+        display: none;
+    }
+}
+
+//Styling custom select
+
+.custom-select {
+    min-width: 260px;
+    position: relative;
+
+    @media screen and (max-width: 900px) {
+        min-width: auto;
+        margin-bottom: 18px;
+        width: 100%;
+    }
+
+}
+
+.custom-select__option {
+    width: 100%;
+    background-color: #1f2323;
+    font-size: 14px;
+    color: @whiteColor;
+    border: 1px solid #282c2c;
+    height: 52px;
+    padding: 0 22px;
+    border-radius: 3px;
+    text-align: left;
+    padding-left: 64px;
+
+}
+
+.custom-select > .referals__withdrawal-option {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        right: 21px;
+        top: 50%;
+        color: @whiteColor;
+        content: '▼';
+        transform: translateY(-50%) scaleY(.5);
+    }
+}
+
+
+
+.custom-select__placeholder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -42px;
+
+    span {
+        transform: scaleY(0.5);
+    }
+}
+
+.custom-select__dropdown {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    z-index: 4;
+}
+
+.referals__withdrawal-option {
+    &--card {
+        background-image: url('./../../img/visa.png');
+        background-repeat: no-repeat;
+        background-position: 24px center;
+    }
+
+    &--qiwi {
+        background-image: url('./../../img/qiwi.png');
+        background-repeat: no-repeat;
+        background-position: 24px center;
+    }
+
+}
+
+
+//Styling datepicker
+
+.pickmeup {
+    z-index: 30;
+    background: #292d2c !important;
+}
+
+.pickmeup .pmu-instance .pmu-day-of-week {
+    color: #b7b7b7 !important;
+    
+
+    
+}
+
+.pickmeup .pmu-instance .pmu-button {
+    &:hover {
+        color: @activeColor !important;
+    }
+}
+
+.pmu-selected {
+    position: relative;
+    background: #404040 !important;
+    color: @whiteColor !important;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #325501;
+        opacity: .5;
+        left: 0;
+        top: 0;
+    }
+}
+
+.pmu-today {
+    background: #325501 !important;
+    color: @activeColor !important;
+}

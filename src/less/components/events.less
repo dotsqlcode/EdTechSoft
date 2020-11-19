@@ -1,0 +1,43 @@
+.events {
+    display: flex;
+
+    list-style: none;
+
+    &__item {
+        
+        &:not(:first-child) {
+            margin-left: 4rem;
+        }
+    }
+
+    &__name {
+        display: block;
+        text-align: center;
+
+        font-size: 14px;
+        font-weight: @fwB;
+
+        color: @whiteColor;
+
+        margin-bottom: 10px;
+    }
+
+    &__time {
+        display: block;
+        text-align: center;
+
+        font-size: 14px;
+
+        color: @lightColor;
+
+
+        span {
+
+            font-size: 16px;
+            font-weight: @fwB;
+
+            color: @activeColor;
+        }
+    }
+
+}

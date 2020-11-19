@@ -1,0 +1,51 @@
+.circle-price {
+    position: relative;
+
+    .size(62px);
+    background-color: @UIColor;
+    border-radius: 50%;
+
+    &::before, &::after {
+        content: '';
+        position:  absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 1px solid @UIColor;
+        border-radius: 50%;
+    }
+
+    &::before {
+        .size(88px);
+
+        animation: Circle 1s ease-in-out infinite;
+    }
+
+    &::after {
+        .size(72px);
+
+        animation: Circle .5s ease-in-out infinite;
+    }
+
+    &__content {
+        position: absolute;
+        left: 73%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        z-index: 1;
+        align-items: center;
+
+        font-weight: @fwB;
+        font-size: 36px;
+
+        color: @whiteColor;
+
+        span {
+            display: block;
+
+            margin-left: 4px;
+        }
+    }
+}
